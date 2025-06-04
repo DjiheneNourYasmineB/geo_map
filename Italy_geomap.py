@@ -173,6 +173,7 @@ if page == "🗂️ About The Dataset":
     st.subheader("About The Data:")
     st.write("This dataset has can be found on Kaggle [here](%s). It contains 1,000,000+ hotels listings aroundthe world with numerous information about hotel names, adresses, ratings, links, etc. It has 16 columns in total."% link_to_dataset)
     st.write("I've had already done some basic data wrangling on this dataset previously: \n - I have filtered the countries to only keep Italy as it is our zone of interest.\n - I have removed missing data \n - Since we have our coordinates in one variable, I have created two seperate variables to work with folium later on. \n - Using the coordinates, I have also used Geopandas to get the region of each hotel to create a region filter afterwards. For this I used this [file](%s)."%link_to_geofile)
+    st.info("Note : The original listing file is larger, I only took a sample (20%) to display it here.")
     
 
 
