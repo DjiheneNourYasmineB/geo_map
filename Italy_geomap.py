@@ -12,7 +12,7 @@ st.set_page_config(page_title="Italy Hotels Map", page_icon="🗺️", layout="w
 
 @st.cache_data
 def load_data():
-    link = "C://Users/LENOVO/OneDrive/Bureau/Streamlit/Geo_data/hotel_listings_Italy.csv"
+    link = "hotel_listings_Italy.csv"
     df = pd.read_csv(link, encoding="ISO-8859-1")
     star_labels = {
     "OneStar": "⭐",
